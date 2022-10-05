@@ -14,80 +14,16 @@
 
 <body class="p-3 m-0 border-0">
     <div class="container">
-        <!-- <div class="" role="toolbar" aria-label="Toolbar with button groups">
-            <div class="input-group input-group-lg spacingForm">
-
-                <input type="text" class="form-control" placeholder="Tu resultado" aria-label="Input group example"
-                    aria-describedby="btnGroupAddon2">
-            </div>
-            <div class="keyboard">
-                <div class="btn-group spacing" role="group" aria-label="First group">
-                    <button type="button" class="border-0 ">(</button>
-                    <button type="button" class="border-0 ">)</button>
-                    <button type="button" class="border-0 ">x!</button>
-                    <button type="button" class="border-0 ">x²</button>
-                    <button type="button" class="border-0 ">√</button>
-                    <button type="button" class="border-0 ">ⁿ√</button>
-
-                </div>
-
-                <div class="btn-group spacing" role="group" aria-label="Second group">
-                    <button type="button" class="border-0 ">sin</button>
-                    <button type="button" class="border-0 ">cos</button>
-                    <button type="button" class="border-0 ">tg</button>
-                    <button type="button" class="border-0 ">x³</button>
-                    <button type="button" class="border-0 ">∛</button>
-                    <button type="button" class="border-0 ">xⁿ</button>
-
-                </div>
-                <div class="btn-group spacing" role="group" aria-label="First group">
-                    <button type="button" class="border-0 ">1</button>
-                    <button type="button" class="border-0 ">2</button>
-                    <button type="button" class="border-0 ">3</button>
-                    <button type="button" class="border-0 ">/</button>
-                    <button type="button" class="border-0 ">%</button>
-                    <button type="button" class="border-0 ">ln</button>
-
-                </div>
-                <div class="btn-group spacing" role="group" aria-label="First group">
-                    <button type="button" class="border-0 ">4</button>
-                    <button type="button" class="border-0 ">5</button>
-                    <button type="button" class="border-0 ">6</button>
-                    <button type="button" class="border-0 ">*</button>
-                    <button type="button" class="border-0 ">log</button>
-                    <button type="button" class="border-0 ">e</button>
-                </div>
-
-                <div class="btn-group spacing" role="group" aria-label="First group">
-                    <button type="button" class="border-0 ">7</button>
-                    <button type="button" class="border-0 ">8</button>
-                    <button type="button" class="border-0 ">9</button>
-                    <button type="button" class="border-0 ">-</button>
-                    <button type="button" class="border-0 ">AC</button>
-                    <button type="button" class="border-0 ">=</button>
-                </div>
-
-
-                <div class="btn-group spacing shortRow" role="group" aria-label="First group">
-                    <button type="button" class="border-0 ">.</button>
-                    <button type="button" class="border-0 ">0</button>
-                    <button type="button" class="border-0 ">π</button>
-                    <button type="button" class="border-0 ">+</button>
-                    <button type="button" class="border-0 ">MR</button>
-                    <button type="button" class="border-0 "></button>
-                </div>
-
-            </div> -->
-
+       
 
         <div class="" role="toolbar" aria-label="Toolbar with button groups">
-            <div class=" bg-black  border-0 spacingForm">0
+            <div class=" bg-black  border-0 spacingForm" id="display">0
             </div>
             <div class="keyboard spacing">
 
-                <button type="button" class="border-0 bgColorOther">(</button>
-                <button type="button" class="border-0 bgColorOther">)</button>
-                <button type="button" class="border-0 bgColorOther">x!</button>
+                <button type="button" class="operacion border-0 bgColorOther">(</button>
+                <button type="button" class="operacion border-0 bgColorOther">)</button>
+                <button type="button" class="operacion border-0 bgColorOther">x!</button>
                 <button type="button" class="border-0 bgColorOther">x²</button>
                 <button type="button" class="border-0 bgColorOther">√</button>
                 <button type="button" class="border-0 bgColorOther">ⁿ√</button>
@@ -103,9 +39,9 @@
                 <button type="button" class="border-0 bgColorOther">xⁿ</button>
 
 
-                <button type="button" class="border-0 bgColor">7</button>
-                <button type="button" class="border-0 bgColor">8</button>
-                <button type="button" class="border-0 bgColor">9</button>
+                <button type="button" class="numero border-0 bgColor">7</button>
+                <button type="button" class="numero border-0 bgColor">8</button>
+                <button type="button" class="numero border-0 bgColor">9</button>
                 <button type="button" class="border-0 bgColorOrange">/</button>
                 <button type="button" class="border-0 bgColorOther">%</button>
                 <button type="button" class="border-0 bgColorOther">ln</button>
@@ -119,8 +55,8 @@
                 <button type="button" class="border-0 bgColorOther">e</button>
 
 
-                <button type="button" class="border-0 bgColor">1</button>
-                <button type="button" class="border-0 bgColor">2</button>
+                <button type="button" class="border-0 bgColor" id="n1">1</button>
+                <button type="button" class="border-0 bgColor" id="n2">2</button>
                 <button type="button" class="border-0 bgColor">3</button>
                 <button type="button" class="border-0 bgColorOrange">-</button>
                 <button type="button" class="border-0 bgColorOther">AC</button>
@@ -132,35 +68,16 @@
                 <button type="button" class="border-0 bgColor">.</button>
                 <button type="button" class="border-0 bgColor">0</button>
                 <button type="button" class="border-0 bgColor">π</button>
-                <button type="button" class="border-0 bgColorOrange">+</button>
+                <button type="button" class="border-0 bgColorOrange" id="suma">+</button>
                 <button type="button" class="border-0 bgColorOther">MR</button>
 
 
 
             </div>
         </div>
-        <!-- <div class="wrapper">
-                <button type="button" class="border-0 ">7</button>
-                <button type="button" class="border-0 ">8</button>
-                <button type="button" class="border-0 ">9</button>
-                <button type="button" class="border-0 ">-</button>
-                <button type="button" class="border-0 ">AC</button>
-                <button type="button" class="border-0 ">8</button>
-                <button type="button" class="border-0 ">9</button>
-                <button type="button" class="border-0 ">-</button>
-                <button type="button" class="border-0 ">AC</button>
-                <button type="button" class="border-0 ">8</button>
-                <button type="button" class="border-0 ">9</button>
-                <button type="button" class="border-0  bigButton">-</button>
-                <button type="button" class="border-0 ">AC</button>
-                <button type="button" class="border-0 ">8</button>
-                <button type="button" class="border-0 ">9</button>
-                <button type="button" class="border-0 ">-</button>
-                <button type="button" class="border-0 ">-</button>
-
-            </div> -->
     </div>
     <!-- End Example Code -->
+    <script src="./script.js"></script>
 </body>
 
 </html>

@@ -8,7 +8,7 @@
     background-color: rgb(248, 244, 244);
     border-radius: 30px;
     font-family: 'Roboto', sans-serif;
-
+   
     font-weight: 100;
 
 }
@@ -50,8 +50,9 @@
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
     text-align: right;
-    padding-top: 60px;
-    padding-right: 5px;
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-left: 16px;
     color: rgb(190, 187, 187);
     ;
 
@@ -98,6 +99,10 @@ button {
 
 }
 
+#display {
+    overflow: hidden;
+    padding-bottom: 30px;
+}
 
 
 
